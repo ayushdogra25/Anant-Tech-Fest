@@ -31,11 +31,13 @@ unzip your-uploaded-zip-file.zip
 
 # Open index.html in your browser
 
-## 🎨 Screenshots
-*(Add some screenshots of your website here for a visual preview!)*
 
 ## 🎭 Contribution
 Want to improve the website? Feel free to fork the repo, create a new branch, and submit a pull request!
+
+## 💀 Credits 
+  Ayushdogra CSE PUSSGRC
+  Kashvi     CSE PUSSGRC
 
 ## 📩 Contact
 For any queries, reach out at:
