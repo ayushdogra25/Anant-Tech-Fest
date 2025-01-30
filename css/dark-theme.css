@@ -1,0 +1,361 @@
+/* Import futuristic fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+:root {
+    --primary-color: #00ffff; /* Cyan */
+    --secondary-color: #9d4edd; /* Purple */
+    --dark-bg: #0a0320; /* Dark Blue-Purple */
+    --darker-bg: #060215; /* Darker Blue-Purple */
+    --lighter-bg: #1a1040; /* Lighter Blue-Purple */
+    --text-primary: #ffffff;
+    --text-secondary: #b3b3b3;
+    --accent-color: #ff00ff; /* Magenta */
+    --gradient-1: linear-gradient(45deg, #00ffff, #9d4edd);
+    --gradient-2: linear-gradient(135deg, #060215, #1a1040);
+}
+
+/* Global Font Styles */
+body {
+    font-family: 'Rajdhani', sans-serif;
+    background-color: var(--dark-bg);
+    color: var(--text-primary);
+}
+
+h1, h2, h3, .navbar-brand {
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.brand {
+    font-family: 'Audiowide', cursive;
+    background: var(--gradient-1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+/* Updated Button Styles */
+.btn-primary {
+    background: var(--gradient-1);
+    border: none;
+    color: var(--darker-bg);
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient-2);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.btn-primary:hover::before {
+    opacity: 1;
+}
+
+.btn-primary:hover {
+    color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+/* Section Titles */
+.section-title {
+    font-family: 'Orbitron', sans-serif;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 50%;
+    height: 3px;
+    background: var(--gradient-1);
+}
+
+/* Cards with Cyberpunk Effect */
+.card {
+    background: var(--gradient-2);
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+    border-color: var(--accent-color);
+}
+
+/* Navbar Updates */
+.navbar {
+    background-color: rgba(6, 2, 21, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.dropdown-menu {
+    background-color: rgba(6, 2, 21, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--primary-color);
+}
+
+.dropdown-item {
+    font-family: 'Rajdhani', sans-serif;
+    letter-spacing: 1px;
+}
+
+/* Hero Section Update */
+.hero-section {
+    background: var(--gradient-2);
+    position: relative;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, var(--primary-color) 0%, transparent 70%);
+    opacity: 0.05;
+}
+
+/* Form Elements */
+.form-control {
+    background-color: var(--darker-bg);
+    border: 1px solid var(--primary-color);
+    color: var(--text-primary);
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.form-control:focus {
+    background-color: var(--darker-bg);
+    border-color: var(--accent-color);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+}
+
+/* Footer Update */
+.footer {
+    background-color: var(--darker-bg);
+    border-top: 1px solid var(--primary-color);
+}
+
+/* Social Links */
+.social-links a {
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--accent-color);
+    transform: translateY(-3px);
+}
+
+/* Animation for Glowing Effect */
+@keyframes glow {
+    0% { box-shadow: 0 0 5px var(--primary-color); }
+    50% { box-shadow: 0 0 20px var(--primary-color), 0 0 30px var(--accent-color); }
+    100% { box-shadow: 0 0 5px var(--primary-color); }
+}
+
+/* Navbar Logo Styling */
+.navbar-logo {
+    width: 70px !important;
+    height: 45px !important;
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    border-radius: 4px !important;
+    object-fit: cover;
+    margin-right: 15px !important;
+}
+
+.navbar-logo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Featured Events Section */
+#events {
+    background: var(--gradient-2) !important;
+    padding: 4rem 0;
+    position: relative;
+}
+
+#events::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 50%, var(--primary-color) 0%, transparent 70%);
+    opacity: 0.05;
+}
+
+#events .section-title {
+    margin-bottom: 3rem;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+#events .card {
+    background: rgba(6, 2, 21, 0.8);
+    border: 1px solid var(--primary-color);
+    backdrop-filter: blur(10px);
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+#events .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+    border-color: var(--accent-color);
+}
+
+#events .card h3 {
+    color: var(--primary-color);
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#events .card p {
+    color: var(--text-primary);
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+#events .card .btn {
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Sponsors Section Styling */
+#sponsors {
+    background: var(--gradient-2);
+    position: relative;
+}
+
+#sponsors::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 50%, var(--primary-color) 0%, transparent 70%);
+    opacity: 0.05;
+}
+
+#sponsors .card {
+    background: rgba(6, 2, 21, 0.8);
+    border: 1px solid var(--primary-color);
+}
+
+#sponsors .card-body {
+    padding: 2rem;
+    color: var(--text-primary);
+}
+
+#sponsors .card-body * {
+    color: var(--text-primary);
+}
+
+#sponsors .card h3 {
+    color: var(--primary-color);
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+}
+
+#sponsors .price {
+    color: var(--accent-color);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+#sponsors .card-body p,
+#sponsors .card-body li,
+#sponsors .card-body span,
+#sponsors .list-unstyled li {
+    color: var(--text-primary) !important;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 0.8rem;
+}
+
+#sponsors .list-unstyled li i.fas.fa-check {
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+#sponsors .sponsor-cta {
+    color: var(--text-primary);
+}
+
+#sponsors .sponsor-cta h3 {
+    color: var(--primary-color);
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 1rem;
+}
+
+#sponsors .sponsor-cta p {
+    color: var(--text-primary);
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.2rem;
+}
+
+/* Why Sponsor Section */
+.why-sponsor .card {
+    background: rgba(6, 2, 21, 0.8);
+}
+
+.why-sponsor h3 {
+    color: var(--primary-color);
+}
+
+.why-sponsor ul li {
+    color: var(--text-primary) !important;
+    margin-bottom: 1rem;
+}
+
+.why-sponsor ul li i {
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+/* Keep the rest of your existing styles but update the colors according to the new variables */ 
