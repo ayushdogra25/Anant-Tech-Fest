@@ -8,35 +8,53 @@
     <link href="css/dark-theme.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+<style>
+    
+
+</style>
 <body>
     <!-- Same Header as index.html -->
     <header class="fixed-top">
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light">
+            <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">
-                        <h1 class="brand">ANANT 2025</h1>
+                    <a class="navbar-brand d-flex align-items-center" href="index.html">
+                        <img src="yash.jpg" alt="ANANT Logo" class="navbar-logo me-2">
+                        <h1 class="brand mb-0">ANANT 2025</h1>
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-auto">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html">Home</a>
+                            </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="eventsDropdown" role="button" data-bs-toggle="dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="eventsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
                                     Events
                                 </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#competitions">Competitions</a></li>
-                                    <li><a class="dropdown-item" href="#workshops">Workshops</a></li>
-                                    <li><a class="dropdown-item" href="#lectures">Lectures</a></li>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="eventsDropdown">
+                                    <li><a class="dropdown-item" href="#hackathon" target="_blank" style="color: white;">Hackathon</a></li>
+                                    <li><a class="dropdown-item" href="#coding" target="_blank" style="color: white;">Coding Competition</a></li>
+                                    <li><a class="dropdown-item" href="#workshops" target="_blank" style="color: white;">Workshops</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#schedule" target="_blank" style="color: white;">Full Schedule</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="clg.html">PUSSGRC</a></li>
-                            <li class="nav-item"><a class="nav-link active" href="sponser.html">Sponsors</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                            <li class="nav-item"><a class="nav-link btn btn-primary text-white ms-2" href="#register">Register</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="about.html"    data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                                    About
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="aboutDropdown">
+                                    <li><a class="dropdown-item" href="#A" style="color: white;">About ANANT</a></li>
+                                    
+                                    <li><a class="dropdown-item" href="#G" style="color: white;">Gallery</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="https://ssgpurch.puchd.ac.in/" target="_blank" style="color: white;">PUSSGRC</a></li>
+                            <li class="nav-item"><a class="nav-link" href="sponsors.html" target="_blank" style="color: white;">Sponsors</a></li>
+                            <li class="nav-item"><a class="nav-link btn btn-primary text-white ms-2" href="#register" style="color: white;">Register</a></li>
                         </ul>
                     </div>
                 </div>
@@ -49,12 +67,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 mx-auto text-center">
-                    <h1 class="display-4 mb-4">Partner with ANANT 2025</h1>
-                    <p class="lead">Join us in shaping the future of technology and innovation</p>
+                  <marquee>  <h1 class="section-title text-center mb-5">Partner with ANANT 2025</h1></marquee>
+                    <p class="lead text-light">Join us in shaping the future of technology and innovation</p>
                 </div>
             </div>
         </div>
     </section>
+    
 
     <!-- Sponsorship Packages -->
     <section class="sponsorship-tiers py-5">
@@ -64,45 +83,45 @@
                 <div class="col-md-4">
                     <div class="card h-100">
                         <div class="card-body text-center">
-                            <h3>Platinum Sponsor</h3>
-                            <div class="price mb-4">₹50,000</div>
+                            <h3 style="color: aliceblue;">Platinum Sponsor</h3>
+                            <div class="price mb-4" style="color: aliceblue;">₹50,000</div>
                             <ul class="list-unstyled">
-                                <li><i class="fas fa-check text-success me-2"></i>Prime logo placement</li>
-                                <li><i class="fas fa-check text-success me-2"></i>Speaking opportunity</li>
-                                <li><i class="fas fa-check text-success me-2"></i>VIP access to all events</li>
-                                <li><i class="fas fa-check text-success me-2"></i>Dedicated booth space</li>
-                                <li><i class="fas fa-check text-success me-2"></i>Social media promotion</li>
+                                <li style="color: aliceblue;"><i class="fas fa-check text-success me-2" style="color: aliceblue;"></i>Prime logo placement</li>
+                                <li style="color: aliceblue;"><i class="fas fa-check text-success me-2" style="color: aliceblue;"></i>Speaking opportunity</li>
+                                <li style="color: aliceblue;"><i class="fas fa-check text-success me-2" style="color: aliceblue;"></i>VIP access to all events</li>
+                                <li style="color: aliceblue;"><i class="fas fa-check text-success me-2" style="color: aliceblue;"></i>Dedicated booth space</li>
+                                <li style="color: aliceblue;"><i class="fas fa-check text-success me-2" style="color: aliceblue;"></i>Social media promotion</li>
                             </ul>
-                            <a href="#contact" class="btn btn-primary mt-3">Contact Us</a>
+                            <a href="#contact" class="btn btn-primary mt-3" style="color: aliceblue;">Contact Us</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card h-100">
                         <div class="card-body text-center">
-                            <h3>Gold Sponsor</h3>
-                            <div class="price mb-4">₹30,000</div>
+                            <h3 style="color: aliceblue;">Gold Sponsor</h3>
+                            <div class="price mb-4" style="color: aliceblue;">₹30,000</div>
                             <ul class="list-unstyled">
-                                <li><i class="fas fa-check text-success me-2"></i>Logo on main banner</li>
-                                <li><i class="fas fa-check text-success me-2"></i>Booth space</li>
-                                <li><i class="fas fa-check text-success me-2"></i>Event passes</li>
-                                <li><i class="fas fa-check text-success me-2"></i>Social media mentions</li>
+                                <li style="color: aliceblue;" ><i class="fas fa-check text-success me-2"></i>Logo on main banner</li>
+                                <li style="color: aliceblue;"><i class="fas fa-check text-success me-2"></i>Booth space</li>
+                                <li style="color: aliceblue;"><i class="fas fa-check text-success me-2"></i>Event passes</li>
+                                <li style="color: aliceblue;"><i class="fas fa-check text-success me-2"></i>Social media mentions</li>
                             </ul>
-                            <a href="#contact" class="btn btn-primary mt-3">Contact Us</a>
+                            <a href="#contact" class="btn btn-primary mt-3" style="color: aliceblue;">Contact Us</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card h-100">
                         <div class="card-body text-center">
-                            <h3>Silver Sponsor</h3>
-                            <div class="price mb-4">₹15,000</div>
+                            <h3 style="color: aliceblue;">Silver Sponsor</h3>
+                            <div class="price mb-4" style="color: aliceblue;">₹15,000</div>
                             <ul class="list-unstyled">
-                                <li><i class="fas fa-check text-success me-2"></i>Logo display</li>
-                                <li><i class="fas fa-check text-success me-2"></i>Event passes</li>
-                                <li><i class="fas fa-check text-success me-2"></i>Brand promotion</li>
+                                <li style="color: aliceblue;"><i class="fas fa-check text-success me-2"></i>Logo display</li>
+                                <li style="color: aliceblue;"><i class="fas fa-check text-success me-2"></i>Event passes</li>
+                                <li style="color: aliceblue;"><i class="fas fa-check text-success me-2"></i>Brand promotion</li>
                             </ul>
-                            <a href="#contact" class="btn btn-primary mt-3">Contact Us</a>
+                            <a href="#contact" class="btn btn-primary mt-3"style="color: aliceblue;">Contact Us</a>
                         </div>
                     </div>
                 </div>
